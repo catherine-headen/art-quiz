@@ -1,25 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Art Quiz</title>
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 
-  </head>
-  <body>
-  <div id="main-content">  
-  	<h1>The Art Quiz</h1>
-<p>Think you know a lot about art? <br />Let's find out!</p>
-<div class="yellow-btn"><p>Get Started<p></div>
-  	</div>
+</head>
+
+<body>
+    <div id="start-content" style="display:none">
+        <h1>The Art Quiz</h1>
+        <p>Think you know a lot about art?
+            <br />Let's find out!</p>
+        <div class="yellow-btn">
+            <p>Get Started
+                <p>
+        </div>
+    </div>
+
+    <div id="question-content" style="display:none">
+        <div class="new-tab">
+            <h1>The Art Quiz</h1>
+            <p>New Game</p>
+        </div>
+        <div class="artwork"></div>
+        <div class="question">
+            <p class="number">Question 1 of 10</p>
+            <p class="text">Who painted the image above?</p>
+            <div class="options">
+
+                <input class="option" type="radio" value="0" name="option" id="a">
+                <label for="a">A. </label>
+                <br />
+
+                <input class="option" type="radio" value="1" name="option" id="b">
+                <label for="b">B. </label>
+                <br />
+
+                <input class="option" type="radio" value="2" name="option" id="c">
+                <label for="c">C. </label>
+                <br />
+
+                <input class="option" type="radio" value="3" name="option" id="d">
+                <label for="d">D. </label>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-content" style="display:block">
+        <div class="new-tab">
+            <h1>The Art Quiz</h1>
+            <p>New Game</p>
+        </div>
+        <div class="results">
+        
+          <p class="art-quiz-name">The Art Quiz</p>
+          <p class="lg-text">Congratulations!</p>
+          <p class="lg-text">You've answered 3 of 10 correctly</p>
+          <div class="result-image"></div>
+            <p class="result-question-number"><span class="check"></span>Question 1</p>
+            <p class="result-question">Who painted the image above?</p>
+            <p class="your-answer">Your Answer</p>
+            <p class="result-answer">Picasso</p>
+            <p class="correct-answer">Correct Answer</p>
+            <p class="result-correct">Picasso</p>
+                      <div class="result-image"></div>
+            <p class="result-question-number"><span class="cross"></span>Question 1</p>
+            <p class="result-question">Who painted the image above?</p>
+                        <p class="your-answer">Your Answer</p>
+            <p class="result-answer">Picasso</p>
+                        <p class="correct-answer">Correct Answer</p>
+            <p class="result-correct">Picasso</p>
+
+      
+        </div>
+    </div>
 
 
 
 
-  </body>
-  </html>
+</body>
+
+</html>
